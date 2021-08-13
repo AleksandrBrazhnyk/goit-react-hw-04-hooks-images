@@ -1,9 +1,9 @@
 import { useState } from "react";
 import { toast } from "react-toastify";
-import s from "./Searchbar.module.css";
+import s from "./SearchBar.module.css";
 import PropTypes from "prop-types";
 
-function Searchbar({ onHandleSubmit }) {
+function SearchBar({ onHandleSubmit }) {
   const [query, setQuery] = useState("");
 
   const onSubmit = (e) => {
@@ -36,8 +36,8 @@ function Searchbar({ onHandleSubmit }) {
   );
 }
 
-Searchbar.propTypes = {
+SearchBar.propTypes = {
   onHandleSubmit: PropTypes.func.isRequired,
 };
 
-export default Searchbar;
+export default SearchBar;

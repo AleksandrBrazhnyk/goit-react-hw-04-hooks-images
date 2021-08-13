@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import { ToastContainer } from "react-toastify";
 import LoaderComponent from "./components/LoaderComponent/LoaderComponent";
 import ErrorView from "./components/ErrorView/ErrorView";
-import Searchbar from "./components/Searchbar/Searchbar";
+import SearchBar from "./components/SearchBar/SearchBar";
 import ImageGallery from "./components/ImageGallery/ImageGallery";
 import Button from "./components/Button/Button";
 import services from "./components/services/apiService";
@@ -71,7 +71,7 @@ function App() {
 
   return (
     <div className={app}>
-      <Searchbar onHandleSubmit={searchImages} />
+      <SearchBar onHandleSubmit={searchImages} />
 
       {error && <ErrorView texterror={error} />}
 
